@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="register-container">
+        <form class="register-form" action="/register" method="post">
+            <h2>Register</h2>
+            <!-- Input fields for username, password, and confirm password -->
+            <input type="text" name="username" placeholder="Username" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required><br>
+            <!-- Register button -->
+            <button type="submit">Register</button>
+            <!-- Link to go back to login page -->
+            <a href="/">Back to Login</a>
+        </form>
+    </div>
+</body>
+</html>

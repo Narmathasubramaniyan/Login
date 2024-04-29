@@ -1,0 +1,252 @@
+/* Login page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a; /* Change background color to a lighter shade of black */
+}
+
+.login-form {
+    background-color: #fff;
+    padding: 45px;
+    border-radius: 10px;
+    box-shadow: black;
+    width: 350px; /* Adjust width as needed */
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form h2 {
+    color: #f36100;
+    text-align: center;
+    font-size: 24px; /* Adjust font size */
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #f36100;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button[type="submit"]:hover {
+    background-color: #d95200;
+}
+
+.login-form a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #f36100;
+    text-decoration: none;
+}
+
+.login-form a:hover {
+    text-decoration: underline;
+}
+
+
+/* Register page */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a; /* Change background color to a lighter shade of black */
+}
+
+.register-form {
+    background-color: #fff;
+    padding: 45px;
+    border-radius: 10px;
+    box-shadow: black;
+    width: 350px; /* Adjust width as needed */
+    height: auto; /* Adjust height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form h2 {
+    color: #f36100;
+    text-align: center;
+    font-size: 24px; /* Adjust font size */
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.register-form input[type="text"],
+.register-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.register-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #f36100;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-form button[type="submit"]:hover {
+    background-color: #d95200;
+}
+
+.register-form a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #f36100;
+    text-decoration: none;
+}
+
+.register-form a:hover {
+    text-decoration: underline;
+}
+
+/* Student Details Page */
+body {
+    background-color: #1a1a1a; /* Set body background color to #1a1a1a */
+    font-family: Arial, sans-serif;
+    color: #fff; /* Text color */
+}
+
+.student-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.student-details-form {
+    background-color: #fff; /* Form background color remains unchanged */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.student-details-form h2 {
+    color: #f36100;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+}
+
+.student-details-form .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.student-details-form .input-group label {
+    color: #f36100;
+    margin-bottom: 5px;
+}
+
+.student-details-form .input-group input[type="text"],
+.student-details-form .input-group input[type="email"] {
+    width: calc(100% - 24px);
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px; /* Adjust font size */
+}
+
+.student-details-form .input-group .gender-options,
+.student-details-form .input-group .language-options {
+    display: flex;
+    flex-direction: row;
+    color: #f36100;
+}
+
+.student-details-form .input-group .gender-options label,
+.student-details-form .input-group .language-options label {
+    color: #f36100;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.student-details-form button[type="submit"] {
+    width: 150px; /* Adjust width as needed */
+    padding: 12px;
+    background-color: #f36100;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Adjust font size */
+}
+
+.student-details-form button[type="submit"]:hover {
+    background-color: #d95200;
+}
+
+/* CSS to style the flash messages */
+.flash {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.flash-success {
+    color: green;
+}
+
+.flash-error {
+    color: red;
+}
+
+.student-details-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.student-details-form {
+    width: 90%;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.language-options {
+    display: flex;
+    flex-direction: row;
+}
+
+.language-options label {
+    margin-right: 10px;
+}
+
+.tick {
+    font-size: 1.2em; /* Adjust size as needed */
+    margin-right: 5px; /* Add space between tick and message */
+}

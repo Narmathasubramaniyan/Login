@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="student-details-container">
+        <form class="student-details-form" action="/student_details" method="post">
+            <h2>Student Details</h2>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="flash flash-{{ category }}">
+                        {% if category == 'success' %}
+                            <span class="tick">&#10004;</span> <!-- Tick mark -->
+                        {% endif %}
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+            {% endwith %}
+            <div class="input-group">
+                <label for="student_name">Student Name</label>
+                <input type="text" id="student_name" name="student_name" placeholder="Enter student name" required>
+            </div>
+            <div class="input-group">
+                <label for="student_id">Student ID</label>
+                <input type="text" id="student_id" name="student_id" placeholder="Enter student ID" required>
+            </div>
+            <div class="input-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter phone number" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter email address" required>
+            </div>
+            <div class="input-group">
+                <label>Gender:</label>
+                <div class="gender-options">
+                    <label for="male"><input type="radio" id="male" name="gender" value="Male" required> Male</label>
+                    <label for="female"><input type="radio" id="female" name="gender" value="Female" required> Female</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <label>Languages:</label>
+                <div class="language-options">
+                    <label for="tamil"><input type="checkbox" id="tamil" name="languages" value="Tamil"> Tamil</label>
+                    <label for="english"><input type="checkbox" id="english" name="languages" value="English"> English</label>
+                    <label for="hindi"><input type="checkbox" id="hindi" name="languages" value="Hindi"> Hindi</label>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
